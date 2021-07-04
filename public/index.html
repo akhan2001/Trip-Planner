@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Triplet</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Affan Khan, Abdullah Khan, Varun Chedda">
+	<meta name="description" content="a website that will create one stock travel itinerary.
+	 This website provides the vital information needed, reduces time and stress spent in planning
+	  a trip. This is a website created for travel within Canada.">
+    <!--leave below at bottom of head-->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <!--NAVIGATION-->
+    <button id="homeButton" type="button" onclick="outputTest()">Triplet Logo button</button>
+	<nav class="menu sticky">
+		<ul class="main-nav">
+			<li class="title"><a href=""><strong>Home</strong></a></li>
+			<li class="push"><a href="">About Us</a></li>		
+			<li><a href="">Resumes</a></li>
+			<li><a href="">Planned Trips</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<hr>
+
+	<!--TAB 1-->
+	<div class="row">
+		<div class="card">
+			<div class="card-header">
+				<h1>StartDate EndDate</h1>
+                <!-- <br> is a line break -->
+                <label for="startDate">Start date of trip:</label><br>
+                <input type="date" id="startDate" name="startDate"><br>
+                <label for="endDate">Last date of trip:</label><br>
+                <input type="date" id="endDate" name="endDate"><br><br>
+                <input type="reset">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<h1>People</h1>
+				<input type="number" min="1" placeholder="# of People">
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<h1>BudgetPerPerson</h1>
+				<input type="number" min="0" placeholder="Budget per Person">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+    <!--BUTTON TO ADD WPT-->
+    <br>
+	<h3>Add Waypoint</h3>
+    <button onclick="addWaypoint()">+</button>
+	<p id="demo"></p>
+    
+    
+    <!--WPT TAB-->
+    <label for="activity1">Activity 1</label><br>
+    <input type="Activity" id="act1" name="activity1"><br>
+    <label for="HotelInfo">Hotel Info</label><br>
+    <input type="" id="act2" name="activity1"><br>
+
+    <!-- Leave me at the bottom of body -->
+    <script src="/index.js"></script>
+</body>
+</html>

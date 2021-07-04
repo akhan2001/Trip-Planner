@@ -1,0 +1,33 @@
+jacvhow to run java code in terminal in VS-code.
+
+1. go to terminal in the top bar
+2. click new terminal
+3. the directory should look like this:
+        .....\travelProject\Trip-Planner\src>
+        to go into directory type in: cd <directory>
+        to go back a directory type in: cd ..
+4. type in:
+        javac src/Filename.java
+5. type in:
+        java src/Filename
+
+
+NOTE:
+- if you want to exit out of the program running press: ctrl+C
+
+
+
+
+GUI info 
+
+client                <<-----------         server       <<--------------      java 
+code, html (index.js)  ------------>>   code (app.js) --------------->>    backend code
+
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |
+                                                V
+                                        mySQL stuff
+                                        login info and database
